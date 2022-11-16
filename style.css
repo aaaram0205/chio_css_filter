@@ -1,0 +1,44 @@
+* {
+  margin:0;
+  padding: 0;
+}
+
+div {
+  width: 650px;
+  margin: 100px auto;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+div img {
+  width: 200px;
+  margin: 6px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  box-sizing:border-box;
+}
+
+div img:nth-of-type(2) {
+  filter: blur(1px);   /* 흐림도 */
+}
+div img:nth-of-type(3) {
+  filter: brightness(1.2)  /* 밝기조절: 1보다 크면 밝고 작으면 어둡게*/
+}
+div img:nth-of-type(4) {
+  filter: contrast(1.2)  /*명도 대비: 1보다 크면 밝은거는 더 밝게 1보다 작으면 어두운건 더 어둡게*/
+}
+div img:nth-of-type(5) {
+  filter: grayscale(0.5)  /* 회색정도: 아예 채도 없애기, 0~1/ 맥시멈채도가 원래 색깔*/
+}
+div img:nth-of-type(6) {
+  filter: saturate(8)  /*채도 조절: 맥시멈 채도가 원래 컬러보다 넘을 수 있다.*/
+}
+div img:nth-of-type(7) {
+  filter: hue-rotate(180deg)  /* 색상환 기준으로 보색관계로 쭉 둘려놓고 해당 각도에 있는 색상으로 변경가능하다. */
+}
+div img:nth-of-type(8) {
+  filter: invert(1) /* 0~1/ 색감, 명도 둘다 반전*/
+}
+div img:nth-of-type(9) {
+  filter: sepia(0.5)    /* 갈색 톤으로 변경*/
+}
